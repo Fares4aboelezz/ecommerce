@@ -64,7 +64,7 @@
                             </div>
 
                             <div class="col">
-                                <label>تاريخ الاستحقاق</label>
+                                <label>تاريخ الانتهاء</label>
                                 <input class="form-control fc-datepicker" name="Due_date" placeholder="YYYY-MM-DD"
                                     type="text" title="يرجى ادخال تاريخ الاستحقاق" required>
                             </div>
@@ -120,10 +120,10 @@
                             </div>
 
                             <div class="col">
-                                <label for="inputName" class="control-label">نسبة ضريبة القيمة المضافة</label>
+                                <label for="inputName" class="control-label">مبلغ التوصيل</label>
                                 <select name="Rate_VAT" id="Rate_VAT" class="form-control" onchange="myFunction()">
                                     <!--placeholder-->
-                                    <option value="" selected disabled>حدد نسبة الضريبة</option>
+                                    <option value="" selected disabled>حدد مبلغ التوصيل</option>
                                     <option value=" 5%">5%</option>
                                     <option value="10%">10%</option>
                                 </select>

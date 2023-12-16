@@ -39,7 +39,7 @@
                                     <th class="wd-15p border-bottom-0">#</th>
                                     <th class="wd-15p border-bottom-0">رقم الفاتورة</th>
                                     <th class="wd-20p border-bottom-0">تاريخ الفاتورة</th>
-                                    <th class="wd-15p border-bottom-0">تاريخ الاستحقاق</th>
+                                    <th class="wd-15p border-bottom-0">تاريخ الانتهاء </th>
                                     <th class="wd-10p border-bottom-0">المنتج</th>
                                     <th class="wd-25p border-bottom-0">القسم</th>
                                     <th class="wd-25p border-bottom-0">الخصم</th>

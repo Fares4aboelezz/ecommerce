@@ -13,6 +13,7 @@ class Product extends Model
 'product_name',
 'section_id',
 'description',
+'number'
         ];
 
         public function sections(){

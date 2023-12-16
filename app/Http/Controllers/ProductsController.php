@@ -14,7 +14,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-       
+
       $sections=sections::all();
       $products=Product::all();
       return view('dashboard.products.products',compact('sections','products'));
@@ -36,16 +36,19 @@ class ProductsController extends Controller
         $data = $request->validate([
             'product_name'=>'required',
             'description'=>'required|min:23|max:111',
-            'section_id'=>'required'
+            'section_id'=>'required',
+            'number'=>'required'
         ],[
         'product_name.required'=>'يرجى ادخال اسم المنتج',
         'description'=>'يرجى ادخال الوصف',
+        'number.required'=>'يرجى ادخال عدد المنتجات'
         ]);
         Product::create([
 
             'product_name'=>$request->product_name,
             'description'=>$request->description,
             'section_id'=>$request->section_id,
+            'number'=>$request->number
            // database  =>   form
 
 

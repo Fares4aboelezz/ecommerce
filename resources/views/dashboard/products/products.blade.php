@@ -50,8 +50,9 @@
                                 <tr>
                                     <th class="border-bottom-0">#</th>
                                     <th class="border-bottom-0">اسم المنتج</th>
-                                    <th class="border-bottom-0">اسم القسم</th>
+                                    <th class="border-bottom-0"> القسم</th>
                                     <th class="border-bottom-0">ملاحظات</th>
+                                    <th class="border-bottom-0">عدد المنتجات</th>
                                     <th class="border-bottom-0">العمليات</th>
 
 
@@ -67,6 +68,7 @@
 
                                         <td>{{$product->section_id}}</td>
                                         <td>{{ $product->description }}</td>
+                                        <td>{{$product->number}}</td>
                                         <td>
                                             <a class="modal-effect btn btn-sm btn-info" data-effect="effect-scale"
                                             data-id="{{ $product->id }}" data-_name="{{ $product->product_name }}"
@@ -108,6 +110,13 @@
                                 <input type="text" class="form-control" id="product_name" name="product_name" required>
 
                             </div>
+
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="examplenumber">عدد المنتجات</label>
+                                    <input type="number" class="form-control" id="number" name="number" required>
+
+                                </div>
 
                             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">القسم</label>
                             <select name="section_id" id="section_id" class="form-control" required>

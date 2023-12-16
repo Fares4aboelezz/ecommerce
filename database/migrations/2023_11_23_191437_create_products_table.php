@@ -15,6 +15,7 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->string('product_name');
            $table->string('description')->nullable();
+           $table->integer('number');
 
         // $table->unsignedBigInteger('section_id');
         //   $table->foreign('section_id')->references('id')->on('sections');

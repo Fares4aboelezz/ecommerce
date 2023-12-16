@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-التجارة الالكترونية
+الصيدلية
 @stop
 @section('css')
 <!--  Owl-carousel css-->
