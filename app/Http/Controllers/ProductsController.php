@@ -14,6 +14,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
+       
       $sections=sections::all();
       $products=Product::all();
       return view('dashboard.products.products',compact('sections','products'));

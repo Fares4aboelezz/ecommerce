@@ -36,11 +36,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::group(['middleware' => ['auth']], function() {
-    Route::resource('roles',RoleController::class);
-    Route::resource('users','UserController');
+// Route::group(['middleware' => ['auth']], function() {
+//     Route::resource('roles',RoleController::class);
+//     Route::resource('users','UserController');
 
-    });
+//     });
 
 Route::resource('invoices', InvoicesController::class);
 

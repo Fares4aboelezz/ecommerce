@@ -58,18 +58,19 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $i=0 ?>
+
                                 @foreach ($products as $product)
-                                <?php $i++; ?>
+
                                     <tr>
-                                        <td>$i</td>
+                                        <td>{{$product->id}}</td>
                                         <td>{{ $product->product_name }}</td>
-                                        <td>{{$product->relation->$section_id}}</td>
+
+                                        <td>{{$product->section_id}}</td>
                                         <td>{{ $product->description }}</td>
                                         <td>
                                             <a class="modal-effect btn btn-sm btn-info" data-effect="effect-scale"
                                             data-id="{{ $product->id }}" data-_name="{{ $product->product_name }}"
-                                            data-description="{{ $product->description }}" data_section_name="{{$product->relation->$section_name}}" data-toggle="modal" href="#exampleModal2"
+                                            data-description="{{ $product->description }}" data_section_name="{{$product->section_name}}" data-toggle="modal" href="#exampleModal2"
                                             title="تعديل"><i class="las la-pen"></i></a>
 
                                          <a class="modal-effect btn btn-sm btn-danger" data-effect="effect-scale"

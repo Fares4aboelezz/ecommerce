@@ -57,7 +57,7 @@
                                         <td>{{ $invoice->invoice_date }}</td>
                                         <td>{{ $invoice->due_date }}</td>
                                         <td>{{ $invoice->product }}</td>
-                                        <td>{{ $invoice->relation->section_id }}</td>
+                                        <td>{{ $invoice->section_id }}</td>
                                         <td>{{ $invoice->Discount }}</td>
                                         <td>{{ $invoice->Rate_vat }}</td>
                                         <td>{{ $invoice->Value_vat }}</td>

@@ -18,8 +18,8 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
 
-           $table->string('roles_name')->nullable()->default('admin');
-            $table->string('status',10);//مفعل ولا لا موجود فعلا ولا لا
+        //    $table->string('roles_name')->nullable()->default('admin');
+            // $table->string('status',10);//مفعل ولا لا موجود فعلا ولا لا
  //status متعرفه كسترينج عادى لكن انا عايز اعرفة ان هى اراى لان ممكن يبقى ليه اكتر من role روح على الموديل
  //بستخدم حاجه اسمها casts
 //$table->array('roles_name');
