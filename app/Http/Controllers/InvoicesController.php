@@ -73,6 +73,7 @@ invoices::create([
     // 'Status' => 'غير مدفوعة',
     // 'Value_Status' => 2,
     'note' => $request->note,
+    //database=>form
 ]);
 return view('dashboard.invoices.invoices');
 //return response('welcome');

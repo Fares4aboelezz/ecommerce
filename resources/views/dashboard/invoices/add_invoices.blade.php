@@ -126,6 +126,10 @@
                                     <option value="" selected disabled>حدد مبلغ التوصيل</option>
                                     <option value=" 5%">5%</option>
                                     <option value="10%">10%</option>
+                                    <option value="20%">20%</option>
+                                    <option value="30%">30%</option>
+                                    <option value="40%">40%</option>
+                                    <option value="50%">50%</option>
                                 </select>
                             </div>
 
@@ -135,12 +139,12 @@
 
                         <div class="row">
                             <div class="col">
-                                <label for="inputName" class="control-label">قيمة ضريبة القيمة المضافة</label>
+                                <label for="inputName" class="control-label">قيمة التوصيل</label>
                                 <input type="text" class="form-control" id="Value_VAT" name="Value_VAT" readonly>
                             </div>
 
                             <div class="col">
-                                <label for="inputName" class="control-label">الاجمالي شامل الضريبة</label>
+                                <label for="inputName" class="control-label">الاجمالي شامل التوصيل</label>
                                 <input type="text" class="form-control" id="Total" name="Total" readonly>
                             </div>
                         </div>
@@ -153,13 +157,13 @@
                             </div>
                         </div><br>
 
-                        <p class="text-danger">* صيغة المرفق pdf, jpeg ,.jpg , png </p>
+                        {{-- <p class="text-danger">* صيغة المرفق pdf, jpeg ,.jpg , png </p>
                         <h5 class="card-title">المرفقات</h5>
 
                         <div class="col-sm-12 col-md-12">
                             <input type="file" name="pic" class="dropify" accept=".pdf,.jpg, .png, image/jpeg, image/png"
                                 data-height="70" />
-                        </div><br>
+                        </div><br> --}}
 
                         <div class="d-flex justify-content-center">
                             <button type="submit" class="btn btn-primary">حفظ البيانات</button>

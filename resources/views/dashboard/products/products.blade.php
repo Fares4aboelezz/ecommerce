@@ -52,7 +52,7 @@
                                     <th class="border-bottom-0">اسم المنتج</th>
                                     <th class="border-bottom-0"> القسم</th>
                                     <th class="border-bottom-0">ملاحظات</th>
-                                    <th class="border-bottom-0">عدد المنتجات</th>
+                                    <th class="border-bottom-0">عدد المنتج</th>
                                     <th class="border-bottom-0">العمليات</th>
 
 
@@ -113,7 +113,7 @@
 
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label for="examplenumber">عدد المنتجات</label>
+                                    <label for="examplenumber">عدد المنتج</label>
                                     <input type="number" class="form-control" id="number" name="number" required>
 
                                 </div>

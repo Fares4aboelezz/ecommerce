@@ -36,15 +36,15 @@
                         <table class="table text-md-nowrap" id="example2">
                             <thead>
                                 <tr>
-                                    <th class="wd-15p border-bottom-0">#</th>
+                                    {{-- <th class="wd-15p border-bottom-0">#</th> --}}
                                     <th class="wd-15p border-bottom-0">رقم الفاتورة</th>
                                     <th class="wd-20p border-bottom-0">تاريخ الفاتورة</th>
                                     <th class="wd-15p border-bottom-0">تاريخ الانتهاء </th>
                                     <th class="wd-10p border-bottom-0">المنتج</th>
                                     <th class="wd-25p border-bottom-0">القسم</th>
                                     <th class="wd-25p border-bottom-0">الخصم</th>
-                                    <th class="wd-25p border-bottom-0">نسبة الضريبة</th>
-                                    <th class="wd-25p border-bottom-0">قيمة الضريبة</th>
+                                    <th class="wd-25p border-bottom-0">نسبة التوصيل</th>
+                                    <th class="wd-25p border-bottom-0">قيمة التوصيل</th>
                                     <th class="wd-25p border-bottom-0">الاجمالى</th>
                                     <th class="wd-25p border-bottom-0">ملاحظات</th>
                                 </tr>
@@ -52,10 +52,10 @@
                             <tbody>
                                 @foreach ($invoices as $invoice)
                                     <tr>
-                                        <td>{{ Auth::user()->id }}</td>
-                                        <td>{{ Auth::user()->invoice_number }}</td>
-                                        <td>{{ $invoice->invoice_date }}</td>
-                                        <td>{{ $invoice->due_date }}</td>
+                                        {{-- <td>{{ Auth::user()->id }}</td> --}}
+                                        <td>{{ $invoice->invoice_number }}</td>
+                                        <td>{{ $invoice->invoice_Date }}</td>
+                                        <td>{{ $invoice->Due_date }}</td>
                                         <td>{{ $invoice->product }}</td>
                                         <td>{{ $invoice->section_id }}</td>
                                         <td>{{ $invoice->Discount }}</td>
